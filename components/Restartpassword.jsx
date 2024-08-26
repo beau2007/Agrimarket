@@ -1,20 +1,21 @@
 import Image from "next/image";
+import style from '@/style/Connection.module.css';
 
 function Restartpassword() {
   return (
     <>
-      <section className="bg-white-50 dark:bg-white-900">
+      <section className={style.identification}>
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-green-900 dark:text-white">
             <Image
               className="w-8 h-8 mr-2"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg"
+              src="/asset/images/logo.webp"
               alt="logo"
               width={32} // largeur de l'image
               height={32} // hauteur de l'image
-            />
+            />AgriMarket
           </a>
-          <div className="w-full p-6 bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md dark:bg-gray-800 dark:border-gray-700 sm:p-8">
+          <div className="w-full p-6 bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md dark:bg-gray-400 dark:border-gray-400 sm:p-8">
             <h2 className="mb-1 text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
               Change Password
             </h2>
@@ -94,7 +95,7 @@ function Restartpassword() {
               </div>
               <button
                 type="submit"
-                className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-500 dark:hover:bg-green-700 dark:focus:ring-primary-800"
               >
                 Reset password
               </button>
